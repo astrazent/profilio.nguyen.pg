@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, pink, lightblue);
+    height: 100vh;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.box .img{
+    width: 150px;
+    height: 150px;
+    border: 5px solid lightpink;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 100px -30px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .content{
+    align-self: center;
+    margin:100px 50px;
+    color: lightcoral;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contact{
+    font-size: 2.5rem;
+    color: red;
+    animation: move 10s infinite linear;
+}
+.contact2{
+    font-size: 2.5rem;
+    color: red;
+    transform: translateX(-500px);
+    margin-top: 50px;
+    animation: moveback 10s infinite linear;
+    animation-delay: 2s;
+}
+.contact3{
+    font-size: 2.5rem;
+    color: red;
+    animation: move 10s infinite linear;
+    transform: translateX(-500px);
+    animation-delay: 3s;
+}
+@keyframes move{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(1500px);
+    }
+}
+@keyframes moveback{
+    from{
+        transform: translateX(1500px);
+    }
+    to{
+        transform: translateX(-500px);
+    }
+}
